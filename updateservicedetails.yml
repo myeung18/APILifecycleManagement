@@ -1,17 +1,17 @@
 ---
-access_token: <youraccesstoken>
-name: customer
+access_token: 6efcf0336397082d7f4e710918a99bd78ca2f7823ba651995557b2aa3da0a471
+name: customer-mss
 deployment_option: hosted
 backend_version: 1
-system_name: customer
+system_name: customer-mss
 status_code: '200'
-basedomain: https://<yourdomain>-admin.3scale.net
-url: https://<yourdomain>-admin.3scale.net/admin/api/services
+basedomain: https://cicd-3scale-admin.3scale1.app.rhdp.ocp.cloud.lab.eng.bos.redhat.com/
+url: https://cicd-3scale-admin.3scale1.app.rhdp.ocp.cloud.lab.eng.bos.redhat.com/admin/api/services
 verb: PUT
-access_token: <your token>
-api_backend: http://vertxcustomer-customer.<blahip>.nip.io:80
-endpoint: https://customer-2445582275120.production.gw.apicast.io:443
-sandbox: https://customer-2445582275120.staging.gw.apicast.io:443
+access_token: 6efcf0336397082d7f4e710918a99bd78ca2f7823ba651995557b2aa3da0a471
+api_backend: http://vertxcustomer-mss-customer.app.rhdp.ocp.cloud.lab.eng.bos.redhat.com:80
+endpoint: https://customer-mss-2445582275120.production.gw.apicast.io:443
+sandbox: https://customer-mss-2445582275120.staging.gw.apicast.io:443
 deployment_option: hosted
 backend_version: 1
 service_id: 2555417756894
@@ -20,7 +20,7 @@ pattern: /mymethod629
 delta: 1
 applicationplanname: gnewplan629
 applicationplansystemname: gnewplan629
-accountid: 2445582275121
+accountid: 4 
 applicationname: cicdapp629
 applicationdescription: cicdapp629
 user_key: welcome629

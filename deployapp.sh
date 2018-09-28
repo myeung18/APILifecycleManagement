@@ -19,11 +19,12 @@ cd  /Volumes/D/demotemp/temp
 
 pwd
 sleep 10s
-git clone https://github.com/kasriniv/$appname.git
+git clone https://github.com/myeung18/$appname.git
 sleep 10s
 cd $appname
 pwd
-oc login -u admin -p <blahpwd> https://<blah>.compute.amazonaws.com:8443
+#oc login -u admin -p <blahpwd> https://<blah>.compute.amazonaws.com:8443
+oc login https://master.rhdp.ocp.cloud.lab.eng.bos.redhat.com:8443 --token=26NAOUiZ4BqqwsTyfSkh8DA-7ooMozPxYDYMrelhaM4
 
 oc new-project $appname
 
@@ -31,4 +32,4 @@ sleep 10s
 
 mvn fabric8:deploy -Popenshift
 sleep 50s
-curl http://vertx$appname-$appname.<BLAHIP>.nip.io/$appname
+curl http://vertx$appname-$appname.app.rhdp.ocp.cloud.lab.eng.bos.redhat.com/$appname

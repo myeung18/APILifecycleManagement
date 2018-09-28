@@ -1,9 +1,9 @@
 ---
 status_code: '201'
-url: https://<blahdomain>-admin.3scale.net/admin/api/services.json
+url: https://cicd-3scale-admin.3scale1.app.rhdp.ocp.cloud.lab.eng.bos.redhat.com/admin/api/services.json
 verb: POST
-access_token: <blahtoken>
-name: customer
+access_token: 6efcf0336397082d7f4e710918a99bd78ca2f7823ba651995557b2aa3da0a471
+name: customer-mss
 deployment_option: hosted
 backend_version: 1
-system_name: customer
+system_name: customer-mss
