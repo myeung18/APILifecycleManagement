@@ -20,3 +20,4 @@ sed -i .bak 's%'api_backend:.*'%'api_backend:\\\ $myvar'%g' updateservicedetails
 
 ansible-playbook  updateservice.yml
 #ansible-playbook  -u ec2-user --inventory-file=ansiblehosts --private-key=<yourpemkeyfile>.pem updateservice.yml
+

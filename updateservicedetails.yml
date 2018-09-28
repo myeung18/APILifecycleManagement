@@ -1,6 +1,7 @@
 ---
 access_token: 6efcf0336397082d7f4e710918a99bd78ca2f7823ba651995557b2aa3da0a471
 name: customer-mss
+api_get_request: customer
 deployment_option: hosted
 backend_version: 1
 system_name: customer-mss
@@ -10,17 +11,17 @@ url: https://cicd-3scale-admin.3scale1.app.rhdp.ocp.cloud.lab.eng.bos.redhat.com
 verb: PUT
 access_token: 6efcf0336397082d7f4e710918a99bd78ca2f7823ba651995557b2aa3da0a471
 api_backend: http://vertxcustomer-mss-customer.app.rhdp.ocp.cloud.lab.eng.bos.redhat.com:80
-endpoint: https://customer-mss-2445582275120.production.gw.apicast.io:443
-sandbox: https://customer-mss-2445582275120.staging.gw.apicast.io:443
+endpoint: https://customer-mss-prod-app.rhdp.ocp.cloud.lab.eng.bos.redhat.com:443
+sandbox: https://customer-mss-staging.app.rhdp.ocp.cloud.lab.eng.bos.redhat.com:443
 deployment_option: hosted
 backend_version: 1
 service_id: 2555417756894
 http_method: GET
 pattern: /mymethod629
 delta: 1
-applicationplanname: gnewplan629
-applicationplansystemname: gnewplan629
+applicationplanname: gnewplanmss
+applicationplansystemname: gnewplanmss
 accountid: 4 
-applicationname: cicdapp629
-applicationdescription: cicdapp629
-user_key: welcome629
+applicationname: cicdappmss
+applicationdescription: cicdappmss
+user_key: welcomemss
