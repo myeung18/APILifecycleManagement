@@ -15,7 +15,7 @@ fi
 
 appname=$1
 echo "name of app to be deployed"
-cd  /Volumes/D/demotemp/temp
+cd /home/myeung/git/APILifecycleManagement
 
 pwd
 sleep 10s
@@ -24,13 +24,13 @@ sleep 10s
 cd $appname
 pwd
 #oc login -u admin -p <blahpwd> https://<blah>.compute.amazonaws.com:8443
-oc login https://master.rhdp.ocp.cloud.lab.eng.bos.redhat.com:8443 --token=2KLBcG9b7n2s3iCEFGL0fj9XHW70yJNkG6jhKUeS1S8
+oc login https://master.rhdp.ocp.cloud.lab.eng.bos.redhat.com:8443 --token=Xne_3IoWSebySnkcwDabFii-mUX6eskXztdkRMwbrPE
 
-oc new-project $appname
+oc new-project mss-$appname
 
 sleep 10s
 
 mvn fabric8:deploy -Popenshift
 sleep 50s
-curl http://vertx$appname-$appname.app.rhdp.ocp.cloud.lab.eng.bos.redhat.com/$appname
+curl http://vertxpolo$appname-mss-$appname.app.rhdp.ocp.cloud.lab.eng.bos.redhat.com/$appname
 
